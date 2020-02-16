@@ -1,5 +1,5 @@
 # Android-Dagger-Onboarding
-Dagger onboarding project
+Dagger onboarding task list:
 
 1. Read the Dagger Basics presentation located inside this repo root folder (dagger-basics.key)
 2. Go through the [Dagger codelab]( https://codelabs.developers.google.com/codelabs/android-dagger/#0) tutorial
@@ -12,7 +12,7 @@ Dagger onboarding project
     * https://dagger.dev/tutorial/
 4. Make Android-Dagger-Onboarding project run successfully
     * This sample project has some intentional errors in the Dagger setup. Your task is to analyse the codebase and fix those errors so that at the end you can run this project and see a screen with the mission briefing information in the HeroHeadquartersActivity
-5. Migrate Android-Dagger-Onboarding project from the current dagger setup to use the dagger.android setup ()
+5. Migrate Android-Dagger-Onboarding project from the current dagger setup to use the dagger.android setup
     * For more information about the dagger.android setup you can check the official [documentation[(https://dagger.dev/android) under the dagger.android section
     * A sample rundown of the imeplementation: https://blog.mindorks.com/the-new-dagger-2-android-injector-cbe7d55afa6a
     * Check out [this project](https://github.com/infinum/Android-MvvM-Example) for reference on how we use dagger.android at Infinum
