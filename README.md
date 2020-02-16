@@ -13,8 +13,8 @@ Dagger onboarding task list:
 4. Make Android-Dagger-Onboarding project run successfully
     * This sample project has some intentional errors in the Dagger setup. Your task is to analyse the codebase and fix those errors so that at the end you can run this project and see a screen with the mission briefing information in the HeroHeadquartersActivity
 5. Migrate Android-Dagger-Onboarding project from the current dagger setup to use the dagger.android setup
-    * For more information about the dagger.android setup you can check the official [documentation[(https://dagger.dev/android) under the dagger.android section
-    * A sample rundown of the imeplementation: https://blog.mindorks.com/the-new-dagger-2-android-injector-cbe7d55afa6a
+    * For more information about the dagger.android setup you can check the official [documentation](https://dagger.dev/android) under the dagger.android section
+    * For a sample rundown imeplementation read [this](https://blog.mindorks.com/the-new-dagger-2-android-injector-cbe7d55afa6a) article
     * Check out [this project](https://github.com/infinum/Android-MvvM-Example) for reference on how we use dagger.android at Infinum
 
  NOTE: This project has the Scabbard plugin integrated. You can use it to see the visual representation of your dependancy graph.
