@@ -5,7 +5,7 @@ Dagger onboarding task list:
 2. Go through the [Dagger codelab]( https://codelabs.developers.google.com/codelabs/android-dagger/#0) tutorial
 	* Steps 10, 11, 12, 13 are optional
 	* Skip steps 14, 16
-3. [Optional] Before moving to steps 4 and 5 we recommend you go through these materials:
+3. [Optional] Before moving to steps 4 and 5 we recommend you to go through these materials:
 	* https://developer.android.com/training/dependency-injection/dagger-basics
 	* https://developer.android.com/training/dependency-injection/dagger-android
 	* https://www.youtube.com/watch?v=ZZ_qek0hGkM&list=PLrnPJCHvNZuA2ioi4soDZKz8euUQnJW65
