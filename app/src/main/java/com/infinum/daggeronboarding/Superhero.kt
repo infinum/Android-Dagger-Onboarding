@@ -1,8 +1,6 @@
 package com.infinum.daggeronboarding
 
-import dagger.Binds
 import dagger.Module
-import javax.inject.Inject
 
 
 interface Superhero {
@@ -14,7 +12,7 @@ interface Superhero {
     fun powers(): List<Power>
 }
 
-class CaptainAmerica @Inject constructor(): Superhero {
+class CaptainAmerica : Superhero {
 
     override fun name(): String = "Steve Rogers aka Captain America"
 
@@ -30,6 +28,5 @@ class CaptainAmerica @Inject constructor(): Superhero {
 @Module
 interface SuperHeroModule {
 
-    @Binds
     fun bindSuperHero(captainAmerica: CaptainAmerica): Superhero
 }

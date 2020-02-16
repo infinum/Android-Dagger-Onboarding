@@ -4,8 +4,7 @@ import dagger.Component
 
 @Component(
     modules = [
-        MissionModule::class,
-        SuperHeroModule::class
+        MissionModule::class
     ]
 )
 interface MarvelComponent {
