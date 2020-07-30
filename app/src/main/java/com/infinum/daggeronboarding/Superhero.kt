@@ -28,5 +28,5 @@ class CaptainAmerica : Superhero {
 @Module
 interface SuperHeroModule {
 
-    fun bindSuperHero(captainAmerica: CaptainAmerica): Superhero
+    fun superHero(captainAmerica: CaptainAmerica): Superhero
 }
