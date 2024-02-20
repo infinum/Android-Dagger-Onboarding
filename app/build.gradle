@@ -5,6 +5,7 @@ apply plugin: 'scabbard.gradle'
 
 scabbard {
     enabled true
+    outputFormat "svg"
 }
 
 android {
