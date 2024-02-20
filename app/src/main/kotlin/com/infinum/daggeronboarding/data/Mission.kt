@@ -1,8 +1,4 @@
-package com.infinum.daggeronboarding
-
-import dagger.Module
-import dagger.Provides
-
+package com.infinum.daggeronboarding.data
 
 class Mission private constructor(
     val location: Location,
@@ -39,15 +35,4 @@ enum class Difficulty {
     HARD,
     WORLD_THREATENING,
     NORMAL
-}
-
-@Module
-class MissionModule {
-
-    @Provides
-    fun provideMission() = Mission.Builder()
-        .difficulty(Difficulty.WORLD_THREATENING)
-        .location(Location.OUTTER_RIM_TERRITORIES)
-        .enemy(Enemy.MASTERS_OF_EVIL)
-        .build()
 }

@@ -1,7 +1,6 @@
-package com.infinum.daggeronboarding
+package com.infinum.daggeronboarding.data
 
-import dagger.Module
-
+import javax.inject.Inject
 
 interface Superhero {
 
@@ -23,10 +22,4 @@ class CaptainAmerica : Superhero {
         Power.DEXTERITY,
         Power.DAMAGE_BOOST
     )
-}
-
-@Module
-interface SuperHeroModule {
-
-    fun superHero(captainAmerica: CaptainAmerica): Superhero
 }

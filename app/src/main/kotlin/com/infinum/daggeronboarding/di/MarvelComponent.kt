@@ -1,5 +1,6 @@
-package com.infinum.daggeronboarding
+package com.infinum.daggeronboarding.di
 
+import com.infinum.daggeronboarding.ui.HeroHeadquartersActivity
 import dagger.Component
 
 @Component(
