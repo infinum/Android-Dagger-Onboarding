@@ -15,12 +15,12 @@ class HeroHeadquartersActivity : AppCompatActivity() {
     @Inject
     lateinit var avengers: Avengers
 
-    val viewBinding: ActivityHeroHeadquartersBinding by viewBinding(ActivityHeroHeadquartersBinding::inflate)
+    private val viewBinding: ActivityHeroHeadquartersBinding by viewBinding(ActivityHeroHeadquartersBinding::inflate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         (applicationContext as SuperHeroApplication).marvelComponent.inject(this)
         super.onCreate(savedInstanceState)
-
+        setContentView(viewBinding.root)
         viewBinding.missionDescription.text = """
             MISSION BRIEFING 
             
