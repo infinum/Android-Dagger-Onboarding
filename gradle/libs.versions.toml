@@ -1,0 +1,53 @@
+[versions]
+# Base dependencies
+gradleBuildTools = "8.2.2"
+kotlin = "1.9.22"
+ksp = "1.9.22-1.0.17"
+coroutines = "1.7.3"
+
+# Dependency Injection
+dagger = "2.50"
+javaxAnnotation = "1.3.2"
+scabbard = "0.5.0"
+
+# UI
+constraintLayout = "2.1.4"
+
+# Core android components
+appCompat = "1.6.1"
+coreKtx = "1.12.0"
+
+# Testing
+junit = "4.13.2"
+junitAndroidx = "1.1.5"
+espresso = "3.5.1"
+
+[libraries]
+# Plugins
+gradleBuildTools = { module = "com.android.tools.build:gradle", version.ref = "gradleBuildTools" }
+kotlinGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+
+# Dependency Injection
+dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
+dagger-android = { module = "com.google.dagger:dagger-android", version.ref = "dagger" }
+dagger-android-processor = { module = "com.google.dagger:dagger-android-processor", version.ref = "dagger" }
+dagger-android-support = { module = "com.google.dagger:dagger-android-support", version.ref = "dagger" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+javaxAnnotation = { module = "javax.annotation:javax.annotation-api", version.ref = "javaxAnnotation" }
+scabbard = { module = "gradle.plugin.dev.arunkumar:scabbard-gradle-plugin", version.ref = "scabbard" }
+
+# UI
+constraintLayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintLayout" }
+
+# Core android components
+appCompat = { module = "androidx.appcompat:appcompat", version.ref = "appCompat" }
+coreKtx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+
+junit = { module = "junit:junit", version.ref = "junit" }
+junit-androidx = { module = "androidx.test.ext:junit", version.ref = "junitAndroidx" }
+espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+
+[plugins]
+
+[bundles]
