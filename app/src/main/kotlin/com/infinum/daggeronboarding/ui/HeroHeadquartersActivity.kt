@@ -1,8 +1,10 @@
-package com.infinum.daggeronboarding
+package com.infinum.daggeronboarding.ui
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_hero_headquarters.*
+import com.infinum.daggeronboarding.data.Avengers
+import com.infinum.daggeronboarding.data.Mission
+import com.infinum.daggeronboarding.databinding.ActivityHeroHeadquartersBinding
 import javax.inject.Inject
 
 class HeroHeadquartersActivity : AppCompatActivity() {
@@ -13,12 +15,13 @@ class HeroHeadquartersActivity : AppCompatActivity() {
     @Inject
     lateinit var avengers: Avengers
 
+    private val viewBinding: ActivityHeroHeadquartersBinding by viewBinding(ActivityHeroHeadquartersBinding::inflate)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         (applicationContext as SuperHeroApplication).marvelComponent.inject(this)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hero_headquarters)
-
-        missionDescription.text = """
+        setContentView(viewBinding.root)
+        viewBinding.missionDescription.text = """
             MISSION BRIEFING 
             
             Leader: ${avengers.leader.name()}

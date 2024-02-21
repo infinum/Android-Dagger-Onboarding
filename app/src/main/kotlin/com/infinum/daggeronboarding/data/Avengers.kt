@@ -1,4 +1,4 @@
-package com.infinum.daggeronboarding
+package com.infinum.daggeronboarding.data
 
 import javax.inject.Inject
 

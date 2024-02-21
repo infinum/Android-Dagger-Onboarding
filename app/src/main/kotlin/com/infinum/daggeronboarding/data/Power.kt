@@ -1,4 +1,4 @@
-package com.infinum.daggeronboarding
+package com.infinum.daggeronboarding.data
 
 enum class Power {
     SUPERHUMAN_STRENGTH,
